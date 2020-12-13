@@ -1,0 +1,121 @@
+.register-page-wrapper {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.register-page-wrapper .register-header-wrapper {
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.register-page-wrapper .register-header-wrapper i {
+  color: black;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+
+.register-page-wrapper .register-section {
+  background-color: white;
+  margin-top: 100px;
+  text-align: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register-page-wrapper .register-section .label-wrapper {
+  margin: 10px 0px;
+  display: inline-block;
+}
+
+.register-page-wrapper .register-section .label-wrapper-log {
+  display: inline-block;
+  width: 60px;
+  margin: 10px 0px;
+}
+
+.register-page-wrapper .register-section input {
+  width: 150px;
+}
+
+.register-page-wrapper .register-section .button-letter {
+  border: 1px solid #636363;
+  color: #636363;
+  background-color: #fff;
+  padding: 5px 15px;
+  margin: 20px auto 0;
+  width: 100px;
+  cursor: pointer;
+}
+
+.register-page-wrapper .register-section .button-letter:hover {
+  text-decoration: underline;
+}
+
+.register-page-wrapper .register-section .button-register {
+  border: 1px solid #636363;
+  color: #636363;
+  background-color: #fff;
+  padding: 5px 15px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.register-page-wrapper .register-section .button-register:hover {
+  text-decoration: underline;
+}
+
+.register-page-wrapper .register-section .label-wrapper-register {
+  padding: 30px 0;
+}
+
+.register-page-wrapper .register-section .label-wrapper-register a {
+  color: black;
+}
+
+.register-page-wrapper .register-section .button-wrapper {
+  padding-bottom: 20px;
+}
+
+.register-page-wrapper .container-register {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (min-width: 320px) {
+  .register-page-wrapper .container-register {
+    grid-template-columns: 120px 150px;
+    width: 300px;
+  }
+}
+
+.register-page-wrapper .container-register input {
+  margin-top: 5px;
+  height: 20px;
+}
+
+@media (min-width: 1100px) {
+  .register-page-wrapper .container-register {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 18px;
+  }
+  .register-page-wrapper .register-section .label-wrapper {
+    margin: 15px 0;
+  }
+  .register-page-wrapper .register-section .label-wrapper-log {
+    width: 80px;
+    font-size: 18px;
+    margin: 15px 0px;
+  }
+  .register-page-wrapper .register-section .label-wrapper-log input {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+  .register-page-wrapper .register-section .label-wrapper-register {
+    font-size: 18px;
+  }
+}

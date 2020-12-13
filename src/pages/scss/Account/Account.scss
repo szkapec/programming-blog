@@ -1,0 +1,116 @@
+.account-page-wrapper {
+    max-width: 800px;
+    width:  100%;
+    margin: 10px auto;
+    display: block;
+    .user-posts-header {
+        max-width: 800px;
+        font-size: 22px;
+        margin: 25px 0 20px 10px;
+        font-weight: bold;
+        @media(min-width: 700px){
+            margin: 25px auto 20px;
+        }
+    }
+    .data-items {
+        font-size: 16px;
+        margin: 10px 0 10px 20px;
+        max-width: 800px;
+        @media(min-width: 1100px){
+            font-size: 18px;
+        }
+        div {
+            margin-top: 10px;
+        }
+        .your-account {
+            font-weight: 700;
+            font-size: 20px;;
+        }
+        @media(min-width: 700px){
+            margin: 25px auto 20px;
+        }
+    }
+
+    .user-post {
+        position: relative;
+        margin: 0 auto 60px;
+        line-height: 25px;
+        border: 1px solid #e9e9e9;
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        .title {
+            border: 1px solid #e9e9e9;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+            
+        }
+        .text {
+            padding: 10px;
+            font-size: 15px;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+        .user-post-image {
+            img {
+                width: 100%;
+                display: block;
+                height: 100%;
+                max-height: 500px;
+                margin: 0px auto 0px;
+            }
+        }
+    }
+    
+    .user-post-date {
+        margin: 0 0 0 10px;
+    }
+    .post__likes__comments {
+        border-top: 1px solid #e9e9e9;
+    }
+    .post__likes__comments__deleteBtn {
+        background-color: #fff;
+        display: flex;
+        padding: 20px 10px;
+        div {
+            margin-left: 10px;
+            color: #3f78a0;
+            i {
+                cursor: pointer;
+                &:hover {
+                    color: #214258;
+                }
+            }
+        }
+        
+        
+    }
+
+    @media(min-width: 1100px) {
+        .user-post .title {
+            font-size: 22px;
+        }
+        .user-post .text {
+            font-size: 16px;
+            line-height: 28px;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+        }
+        .user-post-date {
+            margin: 10px 0 0 20px;
+        }
+        .post__likes__comments__deleteBtn {
+            font-size: 18px;
+        }
+        .user-post-likes i, .user-post-comments i {
+            margin-right: 3px;
+        }
+    }
+}

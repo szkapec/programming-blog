@@ -1,0 +1,113 @@
+.register-page-wrapper {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 600px;
+    .register-header-wrapper {
+        padding: 20px 30px;
+        font-size: 20px;
+        i {
+            color: black;
+            margin: 0px 10px;
+            font-size: 20px;
+        }
+
+    }
+    .register-section {
+        background-color: white;
+        margin-top: 100px;
+        text-align: center;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        .label-wrapper {
+            // width: 100px;
+            margin: 10px 0px;
+            display: inline-block;
+        }
+        .label-wrapper-log {
+            display: inline-block;
+            width: 60px;
+            margin: 10px 0px;
+        }
+     
+        input {
+            width: 150px;
+        }
+   
+        .button-letter {
+            border: 1px solid rgb(99, 99, 99);
+            color: rgb(99, 99, 99);
+            background-color: #fff;
+            padding: 5px 15px;
+            margin: 20px auto 0;
+            width: 100px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .button-register {
+            border: 1px solid rgb(99, 99, 99);
+            color: rgb(99, 99, 99);
+            background-color: #fff;
+            padding: 5px 15px;
+            width: 120px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .label-wrapper-register {
+            padding: 30px 0;
+
+            a {
+                color: black;
+            }
+        }
+        .button-wrapper {
+            padding-bottom: 20px;
+        }
+    }
+
+
+    .container-register {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+
+        @media(min-width:320px){
+            grid-template-columns: 120px 150px; 
+            width: 300px;
+        }
+        input {
+            margin-top:5px;
+            height: 20px;
+        }
+
+        
+    }
+
+    @media(min-width: 1100px){
+        .container-register {
+            grid-template-columns: repeat(2, 1fr); 
+            font-size: 18px;
+        }
+        .register-section .label-wrapper {
+            margin: 15px 0;
+        }  
+        .register-section .label-wrapper-log {
+            width: 80px;
+            font-size: 18px;
+            margin: 15px 0px;
+            input {
+                padding: 10px 10px;
+                font-size: 18px;
+            }
+        }
+        .register-section .label-wrapper-register {
+            font-size: 18px;
+        }
+    }
+}

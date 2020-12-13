@@ -1,0 +1,311 @@
+.topics-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.topics-wrapper .topic-wrapper {
+  background-color: #fff;
+}
+
+.topics-wrapper .topic-wrapper {
+  overflow: hidden;
+  border: 1px solid #e9e9e9;
+  position: relative;
+  margin: 15px 0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1100px) {
+  .topics-wrapper .topic-wrapper {
+    margin: 30px 0;
+  }
+}
+
+.topics-wrapper .topic-user {
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+}
+
+.topics-wrapper .topic-user a {
+  text-decoration: none;
+}
+
+.topics-wrapper .topic-user p {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #325f85;
+  border-bottom: 1px solid #325f85;
+}
+
+.topics-wrapper .topic-user .topic-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.topics-wrapper .like-posts {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 20px;
+  margin-left: 20px;
+}
+
+.topics-wrapper .like-posts i {
+  margin-left: 3px;
+}
+
+.topics-wrapper .like-post-comment-top {
+  margin-left: 5px;
+  color: #767676;
+}
+
+.topics-wrapper .topic-date {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.topics-wrapper .topic-section-image {
+  display: block;
+  width: 100%;
+  margin: 0px auto 0;
+  max-height: 500px;
+}
+
+.topics-wrapper .topic-section {
+  font-family: 'Maven Pro';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.topics-wrapper .topic-section p {
+  width: 90%;
+  margin: 10px auto;
+  padding: 0 20px 10px;
+}
+
+.topics-wrapper .topic-section .like-post-comment {
+  color: #767676;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.topics-wrapper .topic-section .like-post-comment a {
+  color: #767676;
+  text-decoration: none;
+}
+
+.topics-wrapper .topic-section .like-post-comment:hover {
+  text-decoration: underline;
+}
+
+.topics-wrapper .topic-section p:first-letter {
+  text-transform: uppercase;
+}
+
+.topics-wrapper .title {
+  font-family: 'Maven Pro';
+  font-weight: 500;
+  width: 90%;
+  margin: 10px auto;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.topics-wrapper .title::first-letter {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.topic-comment-section {
+  margin-left: 16px;
+}
+
+.like-section {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e9e9e9;
+  height: 30px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.like-section .like-user-title {
+  color: #3f78a0;
+  margin-left: 3px;
+  font-size: 12px;
+}
+
+.like-section .comment-user-title {
+  color: #767676;
+  font-size: 12px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.like-section .like-container {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.like-section .like {
+  margin-right: 5px;
+}
+
+.like-section .none {
+  display: none;
+}
+
+.like-section i {
+  color: #767676;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.like-section .active-like {
+  color: #3f78a0;
+}
+
+.like-section i:hover {
+  color: #3f78a0;
+}
+
+.like-section div {
+  padding-left: 5px;
+  display: inline;
+}
+
+.link-to-post-page-button {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
+.link-to-post-page-button :hover {
+  text-decoration: underline;
+}
+
+.link-to-post-page-button a {
+  text-decoration: none;
+  color: #325f85;
+}
+
+.search {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  max-width: 700px;
+  width: 90%;
+  margin: 5px auto;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main div {
+  margin: 4px 0;
+}
+
+.main button {
+  display: block;
+  margin: 10px 65px;
+  border: 1px solid #3f78a0;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+.main textarea {
+  height: 50px;
+}
+
+@media (min-width: 550px) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main div {
+    text-align: center;
+  }
+}
+
+.landing-wrapper,
+.main,
+.account-page-wrapper,
+.dashboard-wrapper,
+.make-post-wrapper,
+.change-profile-page-wrapper,
+.search-user,
+.make-post-wrapper,
+.topic-user-container {
+  padding-top: 50px;
+}
+
+@media (min-width: 700px) {
+  .landing-wrapper,
+  .main,
+  .account-page-wrapper,
+  .dashboard-wrapper,
+  .make-post-wrapper,
+  .change-profile-page-wrapper,
+  .search-user,
+  .make-post-wrapper,
+  .topic-user-container {
+    padding-top: 60px;
+  }
+  .topics-wrapper .topic-wrapper .topic-section p {
+    font-size: 16px;
+    padding: 10px 20px 20px;
+  }
+  .topics-wrapper .topic-wrapper time {
+    font-size: 18px;
+  }
+  .topics-wrapper .topic-wrapper .link-to-post-page-button {
+    font-size: 16px;
+  }
+  .topics-wrapper .topic-wrapper .topic-avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .topics-wrapper .topic-wrapper .post-name {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 700px) and (min-width: 1100px) {
+  .topic-wrapper .title {
+    font-size: 24px;
+  }
+  .topics-wrapper .topic-wrapper .topic-section p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .topics-wrapper .topic-section .like-post-comment {
+    font-size: 14px;
+  }
+  .topics-wrapper .topic-section {
+    font-size: 16px;
+  }
+  .like-section i {
+    font-size: 18px;
+  }
+  .like-section .like-user-title, .like-section .comment-user-title {
+    font-size: 14px;
+  }
+  .like-section {
+    height: 50px;
+  }
+  .topics-wrapper .topic-wrapper .link-to-post-page-button {
+    bottom: 15px;
+  }
+  .topics-wrapper .topic-date {
+    right: 10px;
+  }
+}
