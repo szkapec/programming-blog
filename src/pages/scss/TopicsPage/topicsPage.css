@@ -81,6 +81,7 @@
   width: 90%;
   border-radius: 0;
   height: 100%;
+  max-height: 450px;
   display: block;
   margin: 10px auto;
 }
@@ -160,6 +161,10 @@
 
 .topic-container .comment-container:nth-child(even) {
   padding-left: 30px;
+}
+
+.topic-container .comment-container:last-child {
+  margin-bottom: 30px;
 }
 
 .topic-container .comment-container .date {
@@ -248,4 +253,41 @@
   display: block;
   margin: 100px auto 0;
   text-align: center;
+}
+
+@media (min-width: 1100px) {
+  .topic-container .topic-section p {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px;
+    font-family: 'Maven Pro';
+  }
+  .topic-container .topic-section .like-posts div, .topic-container .topic-section .like-posts span {
+    font-size: 18px;
+  }
+  .topic-container .topic-section .topic-section.link p {
+    font-size: 18px;
+  }
+  .topic-container .topic-section .topic-section.link span {
+    font-size: 16px;
+  }
+  .search-topic-wrapper input {
+    font-size: 14px;
+  }
+  .search-topic-wrapper button {
+    font-size: 16px;
+  }
+  .topic-container .topic-section p {
+    padding: 0;
+  }
+  .topic-container .comment-container .topic-cl .comment .comment-name {
+    font-size: 16px;
+  }
+  .topic-container .comment-container .topic-cl .comment .comment-text {
+    font-size: 16px;
+  }
+  .topic-container .comment-container .comment-img {
+    width: 40px;
+    height: 40px;
+  }
 }

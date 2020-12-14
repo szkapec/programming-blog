@@ -93,6 +93,7 @@ const TopicsPage = ({ clearPost, removeLikeFromPost, getPost, match, auth, post,
                 {post.comments.length > 0 && <div className="topic-comment-container">
                     <CommentsWrapper comments={post.comments} />
                 </div>}
+               
             </div>
         )
 }

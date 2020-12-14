@@ -14,6 +14,7 @@ const AddPost = ({ createPost, clearPost, posts: { post } }) => {
   const onChange = (e) => setTextOfThePost(e.target.value);
 
   const changeImage = (base64) => setImage(base64)
+  
   const submitData = () => {
 
     if (textOfThePost !== "" && textOfThePost !== null) {

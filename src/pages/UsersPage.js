@@ -87,7 +87,6 @@ const StyledComponentsTopicSearch = styled.div`
         }
         .topic-section {
             margin: 5px 0 30px 0;
-           
             border: 1px solid #e9e9e9;
             background-color: #fff;
             padding: 5px 10px;
@@ -95,11 +94,7 @@ const StyledComponentsTopicSearch = styled.div`
             text-align: center;
             transition: .3s ease-in-out;
             &:hover {
-                background-color: #346589;
-                a {
-                    color: #e9e9e9;;
-
-                }
+                text-decoration: underline;
 
             }
 
