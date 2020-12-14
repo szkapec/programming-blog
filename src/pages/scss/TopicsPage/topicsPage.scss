@@ -34,8 +34,7 @@
     .topic-section {
         overflow: hidden;
         border-top: 1px solid #e9e9e9;
-        border-left: 1px solid #e9e9e9;
-        border-right: 1px solid #e9e9e9;
+     
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 25px;
@@ -87,8 +86,6 @@
     .topic-section .link {
         display: flex;
         align-items: center;
-        border-top: 1px solid #e9e9e9;
-        border-bottom: 1px solid #e9e9e9;
         width: 100%;
         height: 30px;
         
@@ -181,7 +178,7 @@
           
             .comment {
                 position: relative;
-                background-color: rgb(224, 224, 224);
+                background-color: #e7e9ec;
                 border-radius: 30px;
                 padding: 5px 15px 10px;
                 margin: 0 10px;

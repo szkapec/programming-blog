@@ -108,7 +108,8 @@ const StyledButton = styled.div`
     padding: 5px 15px;
     margin: 20px auto;
     text-align: center;
-    background-color: #3f78a0;
+    background-color: white;
+      border: 1px solid rgb(209, 209, 213);
     cursor: pointer;
     border-radius: 5px;
     &:hover {
@@ -122,7 +123,9 @@ const StyledChangeProfile = styled.form`
   grid-template-columns: repeat(1, 1fr);
 
     div {
-      background-color: #3f78a0;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+      border: 1px solid rgb(209, 209, 213);
       padding: 20px;
       margin: 20px auto;
       text-align: center;

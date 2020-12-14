@@ -37,16 +37,17 @@ const AddPost = ({ createPost, clearPost, posts: { post } }) => {
         post === null ? (
           <form>
             <div> Temat:</div>
-            <input type="text" onChange={(e) => setTitle(e.target.value)} />
+            <input placeholder="Temat..." type="text" onChange={(e) => setTitle(e.target.value)} />
 
             <div>Treść:</div>
             <textarea
               type="text"
+              placeholder="treść wiadomości..."
               value={textOfThePost}
               onChange={(e) => onChange(e)}
-            />
+            />  
+            Adres obrazu <input type="text" placeholder="https://..." onChange={(e)=> changeImage(e.target.value)}/>
 
-            <div>Dodaj zdjęcie:</div>
             <div className="file"> <FileBase type="file" multiple={false} onDone={({ base64 }) => changeImage(base64)} /></div>
             <div></div>
             <div
@@ -126,8 +127,8 @@ const StyledConainerAddPost = styled.div`
         cursor: pointer;
         &:hover {
           background-color: #fff;
-          border: 1px solid #346589;
-          color: #346589;
+          text-decoration: underline;
+          
         }
     }
     .output {
@@ -150,7 +151,9 @@ const StyledConainerAddPost = styled.div`
           p {
             width: 150px;
             padding: 15px 10px;
-            background-color: #346589;
+            background-color: white;
+            box-shadow: rgba(0,0,0,0.3) 0px 4px 8px 0px;
+            border: 1px solid rgb(209,209,213);
             text-align: center;
             margin: 20px 0;
             &:hover {

@@ -190,11 +190,12 @@
 
 .link-to-post-page-button :hover {
   text-decoration: underline;
+  color: #3e3e3e;
 }
 
 .link-to-post-page-button a {
   text-decoration: none;
-  color: #325f85;
+  color: #767676;
 }
 
 .search {
